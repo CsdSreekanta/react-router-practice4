@@ -8,7 +8,7 @@ const Header = () => {
         <div>
             <nav className='nav-link '>
                 <h1 className='text-pink-500 text-5xl font-bold'>Welcome to our Travels Agency Website!!!</h1>
-                <div className='bg-pink-500 p-3 my-3 flex justify-center'>
+                <div className='bg-pink-500 p-2 my-3 flex justify-center'>
                 <CustomLink to='/'>Home</CustomLink>
                 <CustomLink to='/friends'>Friends</CustomLink>
                 <CustomLink to='/contact'>Contact</CustomLink>
