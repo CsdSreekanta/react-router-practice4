@@ -13,13 +13,17 @@ const FriendDetail = () => {
         .then(data => setFriend(data))
     },[friendId])
     return (
-        <div>
-            <h1>Friend detail about my friend: {friendId}</h1>
+       <div className="flex justify-center">
+         <div className='border-4 border-pink-600 p-3 my-8 w-1/3'>
+            <h1 className="text-purple-700 text-xl font-bold">Friend detail about my friend: {friendId}</h1>
             <h1>Name: {friend.name}</h1>
             <h1>Phone: {friend.phone}</h1>
             <h1>UserName: {friend.username}</h1>
             <h1>Website: {friend.website}</h1>
+            <h1>City: {friend.address?.city}</h1>
+
         </div>
+       </div>
     );
 };
 
